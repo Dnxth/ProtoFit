@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Primary';
+  src: url('./assets/fonts/Kanit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Strong';
+  src: url('./assets/fonts/Kanit-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Slim';
+  src: url('./assets/fonts/Kanit-Light.ttf');
+}
