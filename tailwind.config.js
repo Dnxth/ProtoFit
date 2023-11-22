@@ -8,6 +8,11 @@ export default {
         strong: ['Strong', 'sans-serif'],
         slim: ['Slim', 'sans-serif'],
       },
+      colors: {
+        primary: '#0D1214',
+        text: '#ECECEC',
+        details: '#F5D061',
+      },
     },
   },
   plugins: [],
