@@ -9,9 +9,10 @@ export default {
         slim: ['Slim', 'sans-serif'],
       },
       colors: {
-        primary: '#0D1214',
-        text: '#ECECEC',
-        details: '#F5D061',
+        primary: '#0D1214', // black
+        secondary: '#1E1E1E', // gray
+        text: '#ECECEC', // white
+        details: '#F5D061', // yellow
       },
     },
   },
