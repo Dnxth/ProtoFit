@@ -1,7 +1,10 @@
 import { Header } from './components/Header';
+import { HorizontalCard } from './components/HorizontalCard';
 import { MainBtn } from './components/MainBtn';
+import { TitleDecorator } from './components/TitleDecorator';
 import { Card } from './components/card';
 import { areas } from './data/areas';
+import { reasons } from './data/reasons';
 
 export const App = () => {
   return (
@@ -24,6 +27,15 @@ export const App = () => {
       <section className="w-full bg-gradient-to-t from-primary to-black px-8 pt-8 flex flex-col gap-y-5">
         {areas.map(area => (
           <Card key={area.id} {...area} />
+        ))}
+      </section>
+      <section className="p-4 font-primary">
+        <div className="flex items-center gap-x-2">
+          <h2 className="text-2xl">Rasons to join</h2>
+          <TitleDecorator />
+        </div>
+        {reasons.map(reason => (
+          <HorizontalCard key={reason.id} {...reason} />
         ))}
       </section>
     </main>
