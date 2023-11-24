@@ -20,24 +20,12 @@ export const App = () => {
           />
         </div>
         <div className="w-full h-3/5 absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
-        <div className="w-full absolute top-full left-0 bg-gradient-to-t from-primary to-black px-8 pt-8 flex flex-col gap-y-5">
-          {areas.map(area => (
-            <Card key={area.id} {...area} />
-          ))}
-        </div>
+      </section>
+      <section className="w-full bg-gradient-to-t from-primary to-black px-8 pt-8 flex flex-col gap-y-5">
+        {areas.map(area => (
+          <Card key={area.id} {...area} />
+        ))}
       </section>
     </main>
   );
 };
-
-/*
-<Card
-  title="Cardio training Section"
-  text="been the industrys standard dummy text ever since the 1500s, when an
-  unknown printer took a galley of type and scrambled"
-  btnColor="bg-details"
-  letterColor="text-text"
-  cardColor="bg-secondary"
-  btnLetter="text-primary"
-/>
-*/
