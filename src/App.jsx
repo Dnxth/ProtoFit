@@ -1,10 +1,14 @@
 import { Header } from './components/Header';
-import { HorizontalCard } from './components/HorizontalCard';
 import { MainBtn } from './components/MainBtn';
-import { TitleDecorator } from './components/TitleDecorator';
-import { Card } from './components/card';
 import { areas } from './data/areas';
+import { Card } from './components/card';
+import { TitleDecorator } from './components/TitleDecorator';
 import { reasons } from './data/reasons';
+import { HorizontalCard } from './components/HorizontalCard';
+import gymBackground1 from './assets/imgs/gymBackground1.jpg';
+import gymBackground2 from './assets/imgs/gymBackground2.jpg';
+import { WavesTop } from './assets/vectors/WavesTop';
+import { WavesBottom } from './assets/vectors/WavesBottom';
 
 export const App = () => {
   return (
@@ -37,6 +41,31 @@ export const App = () => {
         {reasons.map(reason => (
           <HorizontalCard key={reason.id} {...reason} />
         ))}
+      </section>
+      <section className="relative font-primary p-4 ">
+        <WavesTop className="fill-secondary absolute top-0 left-0" />
+        <article className="flex flex-col items-center [&>p]:font-slim [&>p]:text-center [&>p]:text-sm [&>p]:pt-2">
+          <h2 className="text-2xl z-40">About us</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys text ever since the
+            1500s
+          </p>
+          <div className="w-full h-60 relative [&>img]:scale-75 [&>img]:rounded-2xl [&>img]:border-solid [&>img]:border-4 [&>img]:border-details">
+            <img src={gymBackground1} className="absolute top-0 left-10" />
+            <img
+              src={gymBackground2}
+              className="absolute bottom-0 right-10 z-10"
+            />
+          </div>
+        </article>
+        <WavesBottom className="fill-secondary absolute bottom-0 left-0" />
       </section>
     </main>
   );
