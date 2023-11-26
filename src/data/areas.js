@@ -12,6 +12,7 @@ export const areas = [
     cardColor: 'bg-secondary',
     btnColor: 'bg-details',
     btnLetter: 'text-primary',
+    btnText: 'Learn more',
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const areas = [
     cardColor: 'bg-details',
     btnColor: 'bg-primary',
     btnLetter: 'text-text',
+    btnText: 'Learn more',
   },
   {
     id: 3,
@@ -32,5 +34,6 @@ export const areas = [
     cardColor: 'bg-secondary',
     btnColor: 'bg-details',
     btnLetter: 'text-primary',
+    btnText: 'Learn more',
   },
 ];

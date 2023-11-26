@@ -9,6 +9,7 @@ import gymBackground1 from './assets/imgs/gymBackground1.jpg';
 import gymBackground2 from './assets/imgs/gymBackground2.jpg';
 import { WavesTop } from './assets/vectors/WavesTop';
 import { WavesBottom } from './assets/vectors/WavesBottom';
+import { plans } from './data/plans';
 
 export const App = () => {
   return (
@@ -66,6 +67,18 @@ export const App = () => {
           </div>
         </article>
         <WavesBottom className="fill-secondary absolute bottom-0 left-0" />
+      </section>
+      <section className="p-4 font-primary">
+        <div className="flex items-center gap-x-2">
+          <TitleDecorator />
+          <h2 className="text-2xl py-8">Pricing</h2>
+          <TitleDecorator />
+        </div>
+        <div className="flex flex-col gap-y-5 px-8">
+          {plans.map(plan => (
+            <Card key={plan.id} {...plan} />
+          ))}
+        </div>
       </section>
     </main>
   );

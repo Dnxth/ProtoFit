@@ -9,16 +9,26 @@ export const Card = ({
   letterColor,
   cardColor,
   btnLetter,
+  btnText,
   Icon,
+  number,
 }) => {
   return (
     <article
       className={`${cardColor} ${letterColor} flex flex-col items-center p-4 rounded-lg`}
     >
-      <Icon className="w-20 h-20 fill-current" />
-      <h3 className="uppercase font-strong">{title}</h3>
-      <p className="font-slim p-4 text-center">{text}</p>
-      <MainBtn text="Learn more" btnColor={btnColor} btnLetter={btnLetter} />
+      {Icon ? (
+        <Icon className="w-20 h-20 fill-current" />
+      ) : (
+        <h2 className="font-strong text-7xl">
+          <span className="font-primary text-4xl">$</span>
+          {number}
+        </h2>
+      )}
+
+      <h3 className="uppercase font-strong text-lg text-center">{title}</h3>
+      <p className="font-slim p-3 text-center">{text}</p>
+      <MainBtn text={btnText} btnColor={btnColor} btnLetter={btnLetter} />
     </article>
   );
 };
@@ -30,5 +40,7 @@ Card.propTypes = {
   letterColor: PropTypes.string,
   cardColor: PropTypes.string,
   btnLetter: PropTypes.string,
+  btnText: PropTypes.string,
   Icon: PropTypes.func,
+  number: PropTypes.string,
 };
