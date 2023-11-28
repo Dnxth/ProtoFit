@@ -11,7 +11,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between flex-wrap py-4 px-4">
+    <header className="flex items-center justify-between flex-wrap py-4 px-4 bg-primary text-text">
       <div className="flex items-center">
         <PersonRuningIcon className="h-6 fill-current" />
         <h1 className="text-2xl font-strong">
