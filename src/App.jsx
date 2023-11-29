@@ -5,13 +5,10 @@ import { Card } from './components/card';
 import { TitleDecorator } from './components/TitleDecorator';
 import { reasons } from './data/reasons';
 import { HorizontalCard } from './components/HorizontalCard';
-import gymBackground1 from './assets/imgs/gymBackground1.jpg';
-import gymBackground2 from './assets/imgs/gymBackground2.jpg';
-import { WavesTop } from './assets/vectors/WavesTop';
-import { WavesBottom } from './assets/vectors/WavesBottom';
 import { plans } from './data/plans';
 import { Footer } from './components/Footer';
 import womenTraining from './assets/imgs/womenTraining.png';
+import { Carousel } from './components/Carousel';
 
 export const App = () => {
   return (
@@ -46,35 +43,32 @@ export const App = () => {
             <HorizontalCard key={reason.id} {...reason} />
           ))}
         </section>
-        <section className="relative font-primary p-4 ">
-          <WavesTop className="fill-secondary absolute top-0 left-0" />
-          <article className="flex flex-col items-center [&>p]:font-slim [&>p]:text-center [&>p]:text-sm [&>p]:pt-2">
-            <h2 className="text-2xl z-40">About us</h2>
+        <section className="font-primary pt-4 px-4 ">
+          <article className="pb-8 [&>p]:font-slim [&>p]:text-center [&>p]:text-sm">
+            <div className="flex items-center gap-x-2 pb-8">
+              <TitleDecorator />
+              <h2 className="text-2xl">About Us</h2>
+              <TitleDecorator />
+            </div>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
+            <br />
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industrys text ever since the
               1500s
             </p>
-            <div className="w-full h-60 relative [&>img]:scale-75 [&>img]:rounded-2xl [&>img]:border-solid [&>img]:border-4 [&>img]:border-details">
-              <img src={gymBackground1} className="absolute top-0 left-10" />
-              <img
-                src={gymBackground2}
-                className="absolute bottom-0 right-10 z-10"
-              />
-            </div>
           </article>
-          <WavesBottom className="fill-secondary absolute bottom-0 left-0" />
+          <Carousel />
         </section>
-        <section className="p-4 font-primary">
+        <section className="px-4 ont-primary">
           <div className="flex items-center gap-x-2">
             <TitleDecorator />
-            <h2 className="text-2xl py-8">Pricing</h2>
+            <h2 className="text-2xl py-8">Mermberships</h2>
             <TitleDecorator />
           </div>
           <div className="flex flex-col gap-y-5 px-8">
