@@ -16,3 +16,7 @@
   font-family: 'Slim';
   src: url('./assets/fonts/Kanit-Light.ttf');
 }
+
+html {
+  scroll-behavior: smooth;
+}

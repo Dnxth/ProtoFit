@@ -30,17 +30,17 @@ export const Carousel = () => {
 
   const img = imgs[imageIndex];
   return (
-    <article className="bg-secondary p-4 rounded-md font-primary">
+    <article className="rounded-md bg-secondary p-4 font-primary">
       <img
-        src={new URL(`../assets/imgs/${img}.jpg`, import.meta.url).href}
-        className="rounded-md aspect-video object-cover"
+        src={new URL(`../assets/imgs/${img}.webp`, import.meta.url).href}
+        className="aspect-video rounded-md object-cover"
       />
 
       <div className="flex justify-between pt-4">
         <p>
           Proto<span className="text-details">Fit</span>
         </p>
-        <div className="flex gap-7 font-strong [&>button]:text-details [&>button]:scale-150">
+        <div className="flex gap-7 font-strong [&>button]:scale-150 [&>button]:text-details">
           <button onClick={handlePreview}>{'<'}</button>
           <button onClick={handleNext}>{'>'}</button>
         </div>
