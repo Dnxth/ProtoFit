@@ -30,7 +30,7 @@ export const Carousel = () => {
 
   const img = imgs[imageIndex];
   return (
-    <article className="rounded-md bg-secondary p-4 font-primary">
+    <article className="mt-4 rounded-md bg-secondary p-4 font-primary lg:w-full">
       <img
         src={new URL(`../assets/imgs/${img}.webp`, import.meta.url).href}
         className="aspect-video rounded-md object-cover"

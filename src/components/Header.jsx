@@ -20,13 +20,16 @@ export const Header = () => {
       </div>
 
       {isHidden ? (
-        <BarsIcon className="h-6 fill-current" onClick={handleToggle} />
+        <BarsIcon
+          className="h-6 fill-current lg:hidden"
+          onClick={handleToggle}
+        />
       ) : (
-        <Xicon className="h-6 fill-current" onClick={handleToggle} />
+        <Xicon className="h-6 fill-current lg:hidden" onClick={handleToggle} />
       )}
 
-      <nav className={`w-full ${isHidden ? 'hidden' : ''}`}>
-        <ul className="flex flex-col items-center font-primary [&>li]:py-2">
+      <nav className={`w-full ${isHidden ? 'hidden' : ''} lg:block lg:w-fit`}>
+        <ul className="flex flex-col items-center font-primary lg:flex-row lg:gap-x-4 [&>li]:py-2">
           <li>
             <a href="#reasonsSection">Why join?</a>
           </li>

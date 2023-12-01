@@ -4,7 +4,7 @@ export const NewsletterForm = () => {
   };
 
   return (
-    <form className="flex w-3/4 flex-wrap justify-between gap-1 pt-4 [&>input]:z-40 [&>input]:rounded-md [&>input]:border-2 [&>input]:border-text [&>input]:bg-transparent [&>input]:p-1 [&>input]:placeholder:text-sm [&>input]:placeholder:text-text ">
+    <form className="flex w-3/4 flex-wrap justify-between gap-1 pt-4 xl:w-1/2 [&>input]:z-40 [&>input]:rounded-md [&>input]:border-2 [&>input]:border-text [&>input]:bg-transparent [&>input]:p-1 [&>input]:placeholder:text-sm [&>input]:placeholder:text-text">
       <input type="text" placeholder="First Name" className="w-[49%]" />
       <input type="text" placeholder="Last Name" className="w-[49%]" />
 

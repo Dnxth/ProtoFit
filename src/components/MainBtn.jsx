@@ -4,9 +4,10 @@ export const MainBtn = ({ text, btnColor, btnLetter }) => {
   return (
     <a
       href="#"
-      className={`${btnLetter} ${btnColor} rounded-full px-4 py-1 font-strong`}
+      className={`${btnLetter} ${btnColor} flex items-baseline gap-4 rounded-full px-4 py-1 font-strong`}
     >
       {text}
+      <span>{'>'}</span>
     </a>
   );
 };

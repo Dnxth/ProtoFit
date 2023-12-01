@@ -7,19 +7,24 @@ import { YoutubeIcon } from '../assets/icons/YoutubeIcon';
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center bg-details py-4 font-primary text-primary [&>h3]:py-4 [&>h3]:font-strong [&>span]:text-sm">
-      <h3>Address</h3>
-      <span className="w-2/4 text-center">
-        Republic of Belarus Minsk city <br /> Dzerzhinsky avenue 15
-      </span>
-      <h3>Contact</h3>
-
-      <span className="flex items-center gap-x-2">
-        <PhoneIcon fill="currentColor" /> +375(44)-777-24-12
-      </span>
-      <span className="flex items-center gap-x-2">
-        <LetterIcon fill="currentColor" /> gym24@protofit.com
-      </span>
+    <footer className="flex flex-col items-center bg-details py-4 font-primary text-primary">
+      <article className="md:flex md:w-3/4 md:items-start md:justify-center">
+        <div className="flex flex-col items-center md:w-1/2">
+          <h3 className="py-4 font-strong">Address</h3>
+          <span className="w-2/4 text-center text-sm">
+            Republic of Belarus Minsk city Dzerzhinsky avenue 15
+          </span>
+        </div>
+        <div className="flex flex-col items-center md:w-1/2">
+          <h3 className="py-4 font-strong">Contact</h3>
+          <span className="flex items-center gap-x-2 text-sm">
+            <PhoneIcon fill="currentColor" /> +375(44)-777-24-12
+          </span>
+          <span className="flex items-center gap-x-2 text-sm">
+            <LetterIcon fill="currentColor" /> gym24@protofit.com
+          </span>
+        </div>
+      </article>
 
       <nav>
         <ul className="flex gap-x-8 pt-8 text-primary [&>li]:rounded-full [&>li]:border-2 [&>li]:border-primary [&>li]:p-2">
