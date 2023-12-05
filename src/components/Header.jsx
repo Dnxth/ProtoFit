@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BarsIcon } from '../assets/icons/BarsIcon';
 import { PersonRuningIcon } from '../assets/icons/PersonRuningIcon';
-import { Xicon } from '../assets/icons/Xicon';
+import { XIcon } from '../assets/icons/XIcon';
 
 export const Header = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -25,7 +25,7 @@ export const Header = () => {
           onClick={handleToggle}
         />
       ) : (
-        <Xicon className="h-6 fill-current lg:hidden" onClick={handleToggle} />
+        <XIcon className="h-6 fill-current lg:hidden" onClick={handleToggle} />
       )}
 
       <nav className={`w-full ${isHidden ? 'hidden' : ''} lg:block lg:w-fit`}>
