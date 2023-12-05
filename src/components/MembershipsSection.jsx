@@ -1,6 +1,6 @@
 import { TitleDecorator } from './TitleDecorator';
 import { plans } from '../data/plans';
-import { Card } from './card';
+import { Card } from './Card';
 
 export const MembershipsSection = () => {
   return (
