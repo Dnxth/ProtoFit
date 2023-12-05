@@ -1,5 +1,5 @@
 import { areas } from '../data/areas';
-import { Card } from './card';
+import { Card } from './Card';
 
 export const CardsSection = () => {
   return (
