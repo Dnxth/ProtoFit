@@ -31,16 +31,24 @@ export const Header = () => {
       <nav className={`w-full ${isHidden ? 'hidden' : ''} lg:block lg:w-fit`}>
         <ul className="flex flex-col items-center font-primary lg:flex-row lg:gap-x-4 [&>li]:py-2">
           <li>
-            <a href="#reasonsSection">Why join?</a>
+            <a className="hover:text-details" href="#reasonsSection">
+              Why join?
+            </a>
           </li>
           <li>
-            <a href="#aboutSection">About us</a>
+            <a className="hover:text-details" href="#aboutSection">
+              About us
+            </a>
           </li>
           <li>
-            <a href="#membershipsSection">Memberships</a>
+            <a className="hover:text-details" href="#membershipsSection">
+              Memberships
+            </a>
           </li>
           <li>
-            <a href="#NewsletterSection">Contact</a>
+            <a className="hover:text-details" href="#NewsletterSection">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

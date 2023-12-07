@@ -10,7 +10,7 @@ import { Footer } from './components/Footer';
 export const App = () => {
   return (
     <>
-      <main className="bg-primary text-text lg:mx-10 lg:overflow-x-hidden xl:mx-20">
+      <main className="cursor-default bg-primary text-text lg:mx-10 lg:overflow-x-hidden xl:mx-20">
         <Header />
         <HeroSection />
         <CardsSection />
